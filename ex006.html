@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area {
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="saiu()">Interagir</div>
+
+<script>
+    a.add.Event.Listener('click',clicar)
+    a.add.Event.Listener('mouseenter',entrar)
+    a.add.Event.Listener('mouseout',saiu)
+     var a = window.document.getElementById('area')
+    function clicar() {
+        a.innerText = 'Clicou!'
+        a.style.background = 'red'
+
+    }
+
+    function entrar() {
+        a.innerText = 'Entrou!'
+        a.style.background = 'green'
+    }
+
+    function saiu() {
+        a.innerText = 'Saiu!'
+        a.style.background = 'blue'
+    }
+</script>
+    
+</body>
+</html>
